@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ViewproductbysearchService } from '../Model/viewproductbysearch.service';
 
 @Component({
@@ -10,7 +11,8 @@ export class PicUploadComponent implements OnInit {
 
   imagePic:any;//file
   approvalId:any;//number
-  constructor(private viewproductbysearchService:ViewproductbysearchService) { }
+  message:string;
+  constructor(private viewproductbysearchService:ViewproductbysearchService,private router:Router) { }
 
   ngOnInit(): void {
     this.approvalId="AD-05";
@@ -24,6 +26,7 @@ export class PicUploadComponent implements OnInit {
     formData.append('imagePic',this.imagePic);
     this.viewproductbysearchService.uploadImage(formData).subscribe(response => {
       alert(JSON.stringify(response));
+      this.router.navigate(['addproduct']);
   })
 
 }

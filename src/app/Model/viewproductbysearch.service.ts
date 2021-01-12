@@ -11,7 +11,7 @@ export class ViewproductbysearchService {
   constructor(private http:HttpClient) { }
 
   searchProduct(field:string): Observable<any>{
-    let url="http://localhost:8080/searchProduct?field="+field;
+    let url="http://localhost:8080/searchProductByTag?field="+field;
     return this.http.get(url);
   }
 

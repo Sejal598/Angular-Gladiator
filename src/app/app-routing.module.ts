@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { PicUploadComponent } from './pic-upload/pic-upload.component';
+import { ProductComponent } from './productapproval/product.component';
 import { RegisterComponent } from './register/register.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
 
@@ -11,7 +12,8 @@ import { ViewProfileComponent } from './view-profile/view-profile.component';
 const routes: Routes = [{path:'dashboard',component:DashboardComponent},
 {path:'login',component:LoginComponent},
 {path:'register',component:RegisterComponent},
-{path:'dashboard/pic-upload',component:PicUploadComponent},
+{path:'addproduct',component:ProductComponent},
+{path:'addproduct/pic-upload',component:PicUploadComponent},
 {path:'dashboard/view-profile',component:ViewProfileComponent},
 ];
 
@@ -20,4 +22,4 @@ const routes: Routes = [{path:'dashboard',component:DashboardComponent},
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingcomponents=[DashboardComponent,LoginComponent,RegisterComponent,PicUploadComponent,ViewProfileComponent]
+export const routingcomponents=[DashboardComponent,LoginComponent,ProductComponent,RegisterComponent,PicUploadComponent,ViewProfileComponent]
