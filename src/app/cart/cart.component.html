@@ -1,0 +1,50 @@
+<p>cart works!</p>
+<button (click)="onShow()">ShowCart</button>
+<div *ngIf="flag">
+    <ol *ngFor="let c of CartItems">
+     {{c.product_name}}   <br>
+     {{c.price}}<br>
+     {{c.quantity}}<br>
+     {{c.description}}<br>
+     {{c.product_Id}}<br>
+ 
+</ol> 
+
+  
+ <button (click)="onOrder()">OrderNow</button>
+ 
+
+</div>   
+<!---
+
+"cartId": "CART-3",
+        "product_Id": "MOB-05",
+        "product_name": "redmi note 7 pro",
+        "price": 11500.9,
+        "quantity": 1,
+        "image": null,
+        "description": "made:india ram:4gb rom:64gb"
+-->
+<!--
+"addrId":"ADR-101", 
+        "userId":"USR-01",
+        "doorNo":"121",
+        "street":"Chandni Chok",
+        "district":"Mandla",
+       
+        "state":"MP",
+        "country":"India",
+        "pincode":481661
+-->
+
+
+
+<!--
+
+
+    "orderId": "ORD-03",
+        "amount": 17999.9,
+        "order_date": "2021-01-12T20:29:57.797",
+        "useraddress": "121 Mandla India",
+        "orderitems": []
+-->
