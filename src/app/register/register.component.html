@@ -1,0 +1,9 @@
+<p>Thank you so much for increasing load on our server..</p>
+<p>Please provide us following details:</p>
+<form (ngSubmit)="register()">
+    Enter your Name: <input type="text" name="t1" [(ngModel)]="customer.name"/><br/>
+    Select your Date of Birth : <input type="date" name="t2" [(ngModel)]="customer.dateOfBirth"/><br/>
+    Enter your EmailId : <input type="email" name="t3" [(ngModel)]="customer.email"/><br/>
+    Enter your Password : <input type="password" name="t4" [(ngModel)]="customer.password"><br/>
+    <button type="submit">Register</button>
+</form>
