@@ -15,8 +15,8 @@ export class ViewproductbysearchService {
     return this.http.get(url);
   }
 
-  viewImage(id:string):Observable<ImageService>{
-    let url="http://localhost:8080/productImage?productId="+id;
+  viewImage(productId:string):Observable<ImageService>{
+    let url="http://localhost:8080/productImage?productId="+productId;
     return this.http.get<ImageService>(url);
   }
   uploadImage(formData:FormData):Observable<any> {

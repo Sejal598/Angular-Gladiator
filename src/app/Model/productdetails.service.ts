@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { ImageService } from './image.service';
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +7,7 @@ import { Injectable } from '@angular/core';
 export class ProductdetailsService {
 
   constructor() { }
+  productId:string;
   name:string;
   category:string;
   color:string;
@@ -16,4 +18,5 @@ export class ProductdetailsService {
   searchDescriptionjson:number;
   retailer:string;
   product:string;
+  images:ImageService[]=[];
 }

@@ -9,4 +9,5 @@ export class ImageService {
   imgId:string;
   imgUrl:string;
   approvalId:string;
+  productId:string;
 }

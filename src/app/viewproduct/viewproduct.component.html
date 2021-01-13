@@ -18,6 +18,10 @@
             {{product.price}}<br>
             {{product.discountInPercent}}<br>
             {{product.searchDescriptionjson}}<br>
+            {{product.productId}}<br>
+            <div *ngFor="let image of product.images">
+                <img src="http://localhost:8080/downloads/{{ image.imgUrl }}"/>
+            </div>
             <button (click)="onclick(product.productId)">AddToCart</button>
     </div>
 </div>
