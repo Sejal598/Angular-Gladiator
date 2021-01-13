@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../Cartservice.service';
 import { DisplayproductService } from '../Model/displayproduct.service';
+import { ImageService } from '../Model/image.service';
 import { ViewproductbysearchService } from '../Model/viewproductbysearch.service';
 
 @Component({
@@ -11,13 +12,11 @@ import { ViewproductbysearchService } from '../Model/viewproductbysearch.service
 export class ViewproductComponent implements OnInit {
 
   field:string;
-  
   constructor(private viewproductbysearch:ViewproductbysearchService,private cartS :CartService) { }
   productlist:DisplayproductService[]=[];
   ngOnInit(): void {
   }
   search(){
-    
     alert(this.field);
     this.viewproductbysearch.searchProduct(this.field).subscribe(response=>{
       this.productlist=response;
@@ -26,7 +25,6 @@ export class ViewproductComponent implements OnInit {
   }
   onclick(productId){
     this.cartS.addtocart(productId).subscribe(e=>{
-      
         alert(e.message)
       
     })
