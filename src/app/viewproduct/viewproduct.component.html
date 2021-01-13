@@ -1,0 +1,23 @@
+<p>viewproduct works!</p>
+<form (ngSubmit)="search()">
+    <table>
+        <tr>
+            <td><input type="text" name="t1" [(ngModel)]="field"></td>
+        </tr>
+        <tr>
+            <button type="submit">search</button>
+        </tr>
+    </table>
+</form>
+<div *ngIf="productlist">
+    <div *ngFor="let product of productlist | sortpipe">
+            {{product.name}}<br>
+            {{product.category}}<br>
+            {{product.color}}<br>
+            {{product.brand}}<br>
+            {{product.price}}<br>
+            {{product.discountInPercent}}<br>
+            {{product.searchDescriptionjson}}<br>
+            <button (click)="onclick(product.productId)">AddToCart</button>
+    </div>
+</div>
