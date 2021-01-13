@@ -1,0 +1,11 @@
+<form (ngSubmit)="updateAddress()">
+    Door No : <input type="text" name="t1" [(ngModel)]=addrUpdate.doorNo><br />
+    Street : <input type="text" name="t2" [(ngModel)]=addrUpdate.street><br />
+    District : <input type="text" name="t3" [(ngModel)]=addrUpdate.district><br />
+    State : <input type="text" name="t4" [(ngModel)]=addrUpdate.state><br />
+    Country : <input type="text" name="t5" [(ngModel)]=addrUpdate.country><br />
+    Pincode : <input type="number" name="t6" [(ngModel)]=addrUpdate.pincode><br />
+    <button type="submit">Add Address</button>
+</form>
+
+<h2>{{message}}</h2>

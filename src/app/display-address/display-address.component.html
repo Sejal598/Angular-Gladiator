@@ -1,0 +1,14 @@
+<form (ngSubmit) = "dispAddress()">
+    <button type="submit">Display</button>
+</form>
+
+<h2>Data Obtained is </h2>
+
+<div *ngFor="let addr of resp">
+    <p>Door No : {{addr.doorNo}}</p>
+    <p>Street : {{addr.street}}</p>
+    <p>District : {{addr.district}}</p>
+    <p>State : {{addr.state}}</p>
+    <p>Country : {{addr.country}}</p>
+    <p>Pincode : {{addr.pincode}}</p><br />
+</div>

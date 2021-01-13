@@ -1,0 +1,21 @@
+<form (ngSubmit)="dispRetailerDetails()">
+    <button type="submit">Fetch Pending Retailers</button>
+</form>
+
+<div *ngFor="let retail of retailJson">
+    <table>
+        <tr>
+            <th>Retailer Name</th>
+            <th>Retailer Email ID</th>
+            <th>Approval?</th>
+        </tr>
+        <tr>
+            <td>{{retail[0]}}</td>
+            <td>{{retail[1]}}</td>
+            <td>
+                <button (click)="approvalRetailer(retail[0] , retail[1] , 'APPROVED')">Approve</button>
+                <button (click)="approvalRetailer(retail[0] , retail[1] , 'REJECTED')">Reject</button>
+            </td>
+        </tr>
+    </table>
+</div>
