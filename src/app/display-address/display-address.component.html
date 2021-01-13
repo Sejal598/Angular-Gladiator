@@ -1,8 +1,6 @@
-<form (ngSubmit) = "dispAddress()">
+<form (ngSubmit)="dispAddress()">
     <button type="submit">Display</button>
 </form>
-
-<h2>Data Obtained is </h2>
 
 <div *ngFor="let addr of resp">
     <p>Door No : {{addr.doorNo}}</p>
