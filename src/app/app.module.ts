@@ -25,6 +25,7 @@ import { DisplayAddressComponent } from './display-address/display-address.compo
 import { UpdateMobileComponent } from './update-mobile/update-mobile.component';
 import { AddupdateaddressComponent } from './addupdateaddress/addupdateaddress.component';
 import { UserprofilecontainerComponent } from './userprofilecontainer/userprofilecontainer.component';
+import { PlaceOrderComponent } from './place-order/place-order.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { UserprofilecontainerComponent } from './userprofilecontainer/userprofil
     DisplayAddressComponent,
     UpdateMobileComponent,
     AddupdateaddressComponent,
-    UserprofilecontainerComponent
+    UserprofilecontainerComponent,
+    PlaceOrderComponent
   ],
   imports: [
     BrowserModule,

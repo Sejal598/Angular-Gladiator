@@ -1,0 +1,35 @@
+
+ 
+<button (click)="addressReceive()">Select from Address</button>
+<div>
+
+    <div *ngIf="Address">
+
+        <div (click)="select(address)" *ngFor="let address of Address">
+            <p>Door No : {{address.doorNo}}</p>
+            <p>Street : {{address.street}}</p>
+            <p>District: {{address.district}}</p>
+            <p>State : {{address.state}}</p>
+            <p>Country : {{address.country}}</p>
+            <p>Pincode : {{address.pincode}}</p>
+           
+        </div>
+</div>
+<button (click)=addNew()>AddNewAddress</button>
+<div *ngIf="flag">
+<form (ngSubmit)="addNewAddress()">
+    Door No : <input type="text" name="t1" [(ngModel)]=addr.doorNo><br />
+    Street : <input type="text" name="t2" [(ngModel)]=addr.street><br />
+    District : <input type="text" name="t3" [(ngModel)]=addr.district><br />
+    State : <input type="text" name="t4" [(ngModel)]=addr.state><br />
+    Country : <input type="text" name="t5" [(ngModel)]=addr.country><br />
+    Pincode : <input type="number" name="t6" [(ngModel)]=addr.pincode><br />
+    
+   
+</form>
+
+
+</div>
+<div *ngIf="flag2">
+    <button (click)=placeOrder()>PLACE YOUR ORDER</button>
+</div>
