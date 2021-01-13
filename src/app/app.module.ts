@@ -1,3 +1,5 @@
+import { CatagoryComponent } from './catagories/catagory/catagory.component';
+import { ProductService } from './ProductService.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +17,9 @@ import { ProductComponent } from './productapproval/product.component';
 import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { CartComponent } from './cart/cart.component';
 import { CartService } from './Cartservice.service';
+import { SortpipePipe } from './sortpipe.pipe';
+
+import { CatagoriesComponent } from './catagories/catagories.component';
 
 
 @NgModule({
@@ -28,7 +33,10 @@ import { CartService } from './Cartservice.service';
     ViewProfileComponent,
     ProductComponent,
     ViewproductComponent,
-    CartComponent
+    CartComponent,
+    SortpipePipe,
+    CatagoriesComponent,
+    CatagoryComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +45,7 @@ import { CartService } from './Cartservice.service';
     HttpClientModule,
     RouterModule,
   ],
-  providers: [CartService],
+  providers: [CartService,ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
