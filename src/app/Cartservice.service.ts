@@ -24,7 +24,7 @@ addtocart(productId:String){
 }
 fetch(){
 
-    return this.http.post<any>('http://localhost:8080/fetchCart',{"userId":"USR-01"}).pipe(catchError(err=>{
+    return this.http.post<any>('http://localhost:8080/fetchCart?userId=USR-01',null).pipe(catchError(err=>{
         return throwError(err);
     }))
      }
