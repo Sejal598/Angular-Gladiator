@@ -1,0 +1,20 @@
+<div class="catagorycol">
+
+    catagories:-
+
+    <app-catagory *ngFor="let item of categories" (click)='onclick(item)' [val]='item'></app-catagory>
+    
+    
+</div>
+
+<div *ngIf="products">
+
+    <div class="card" *ngFor="let item of products">
+<h3>{{item.name}}</h3>
+<h3>{{item.brand}}</h3>
+<h3>{{item.price}}</h3>
+<h3>{{item.name}}</h3>
+
+    </div>
+
+</div>

@@ -10,7 +10,7 @@
     </table>
 </form>
 <div *ngIf="productlist">
-    <div *ngFor="let product of productlist">
+    <div *ngFor="let product of productlist | sortpipe">
             {{product.name}}<br>
             {{product.category}}<br>
             {{product.color}}<br>
