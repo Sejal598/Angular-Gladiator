@@ -13,6 +13,7 @@ import { UserprofilecontainerComponent } from './userprofilecontainer/userprofil
 import { WishListComponent } from './wish-list/wish-list.component';
 import { AddupdateaddressComponent } from './addupdateaddress/addupdateaddress.component';
 import { UpdateMobileComponent } from './update-mobile/update-mobile.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 
 const routes: Routes = [{ path: 'dashboard', component: DashboardComponent },
 { path: 'login', component: LoginComponent },
@@ -25,7 +26,8 @@ const routes: Routes = [{ path: 'dashboard', component: DashboardComponent },
 { path: 'userprofilecontainer', component: UserprofilecontainerComponent },
 { path: 'wishlist', component: WishListComponent },
 { path: 'addaddress', component: AddupdateaddressComponent },
-{ path: 'addmobile', component: UpdateMobileComponent }
+{ path: 'addmobile', component: UpdateMobileComponent },
+{ path: 'changepassword', component: ChangepasswordComponent }
 ];
 
 @NgModule({
@@ -33,4 +35,4 @@ const routes: Routes = [{ path: 'dashboard', component: DashboardComponent },
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingcomponents = [DashboardComponent, LoginComponent, ProductComponent, RegisterComponent, PicUploadComponent, ViewProfileComponent, UserprofileComponent, DisplayAddressComponent, UserprofilecontainerComponent, UpdateMobileComponent, AddupdateaddressComponent, WishListComponent]
+export const routingcomponents = [DashboardComponent, LoginComponent, ProductComponent, RegisterComponent, PicUploadComponent, ViewProfileComponent, UserprofileComponent, DisplayAddressComponent, UserprofilecontainerComponent, UpdateMobileComponent, AddupdateaddressComponent, WishListComponent, ChangepasswordComponent]
