@@ -30,6 +30,8 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
 import { ProductretailerComponent } from './productretailer/productretailer.component';
 import { UpdateretailermobileComponent } from './updateretailermobile/updateretailermobile.component';
 import { AddretaileraddressComponent } from './addretaileraddress/addretaileraddress.component';
+import { RetailerprofilecontainerComponent } from './retailerprofilecontainer/retailerprofilecontainer.component';
+import { RetailerprofileComponent } from './retailerprofile/retailerprofile.component';
 
 
 @NgModule({
@@ -57,7 +59,9 @@ import { AddretaileraddressComponent } from './addretaileraddress/addretaileradd
     ChangepasswordComponent,
     ProductretailerComponent,
     UpdateretailermobileComponent,
-    AddretaileraddressComponent
+    AddretaileraddressComponent,
+    RetailerprofilecontainerComponent,
+    RetailerprofileComponent
   ],
   imports: [
     BrowserModule,
