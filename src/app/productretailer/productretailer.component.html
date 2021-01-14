@@ -1,0 +1,9 @@
+<form (ngSubmit)="displayProduct()">
+    <button type="submit">Display Products</button>
+</form>
+
+<div *ngFor="let p of productList">
+    <p>{{p.productId}}</p>
+    <p>{{p.name}}</p>
+    <p>Quantity : {{p.quantity}}</p>
+</div>

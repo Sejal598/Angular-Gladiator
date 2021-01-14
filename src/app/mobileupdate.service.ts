@@ -14,4 +14,9 @@ export class MobileupdateService {
     let url = "http://localhost:8080/UpdateMobile/User";
     return this.http.post(url, updateMob)
   }
+
+  updateRetailerMobile(updateRet: UpdateMobile): Observable<any> {
+    let url = "http://localhost:8080/UpdateMobile/Retailer";
+    return this.http.post(url, updateRet);
+  }
 }
