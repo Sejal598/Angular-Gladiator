@@ -27,6 +27,12 @@ import { AddupdateaddressComponent } from './addupdateaddress/addupdateaddress.c
 import { UserprofilecontainerComponent } from './userprofilecontainer/userprofilecontainer.component';
 import { PlaceOrderComponent } from './place-order/place-order.component';
 import { DisplayOrderComponent } from './display-order/display-order.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { ProductretailerComponent } from './productretailer/productretailer.component';
+import { UpdateretailermobileComponent } from './updateretailermobile/updateretailermobile.component';
+import { AddretaileraddressComponent } from './addretaileraddress/addretaileraddress.component';
+import { RetailerprofilecontainerComponent } from './retailerprofilecontainer/retailerprofilecontainer.component';
+import { RetailerprofileComponent } from './retailerprofile/retailerprofile.component';
 
 
 @NgModule({
@@ -51,7 +57,13 @@ import { DisplayOrderComponent } from './display-order/display-order.component';
     AddupdateaddressComponent,
     UserprofilecontainerComponent,
     PlaceOrderComponent,
-    DisplayOrderComponent
+    DisplayOrderComponent,
+    ChangepasswordComponent,
+    ProductretailerComponent,
+    UpdateretailermobileComponent,
+    AddretaileraddressComponent,
+    RetailerprofilecontainerComponent,
+    RetailerprofileComponent
   ],
   imports: [
     BrowserModule,
