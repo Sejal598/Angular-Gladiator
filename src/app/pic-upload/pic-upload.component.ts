@@ -15,7 +15,7 @@ export class PicUploadComponent implements OnInit {
   constructor(private viewproductbysearchService:ViewproductbysearchService,private router:Router) { }
 
   ngOnInit(): void {
-    this.approvalId="AD-05";
+    this.approvalId=sessionStorage.getItem('approvalId');
   }
   onFileChange(event){
     this.imagePic=event.target.files[0];
@@ -26,7 +26,6 @@ export class PicUploadComponent implements OnInit {
     formData.append('imagePic',this.imagePic);
     this.viewproductbysearchService.uploadImage(formData).subscribe(response => {
       alert(JSON.stringify(response));
-      this.router.navigate(['addproduct']);
   })
 
 }
