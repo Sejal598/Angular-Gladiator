@@ -15,7 +15,7 @@ constructor(private http:HttpClient){
 addtocart(productId:String){
 
     return this.http.post<any>('http://localhost:8080/addCart',{
-        userId:'USR-01',
+        userId:'USR-476ec503-bee5-4ee2-8096-e4f87b61957d',
         productId:productId,
         quantity:1
     }).pipe(catchError(err=>{
@@ -24,7 +24,7 @@ addtocart(productId:String){
 }
 fetch(){
 
-    return this.http.post<any>('http://localhost:8080/fetchCart?userId=USR-01',null).pipe(catchError(err=>{
+    return this.http.post<any>('http://localhost:8080/fetchCart?userId=USR-476ec503-bee5-4ee2-8096-e4f87b61957d',null).pipe(catchError(err=>{
         return throwError(err);
     }))
      }
